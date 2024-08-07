@@ -1,0 +1,6 @@
+Error[1027] main.c 82 : unable to locate 'xc.h'
+Error[1027] ./pragmas.h 15 : unable to locate 'xc.h'
+Error[1027] ./pragmas.h 17 : unable to locate 'stdint.h'
+Error[1027] ./main.h 15 : unable to locate 'stdint.h'
+Error[1027] ./main.h 16 : unable to locate 'stdbool.h'
+Error[1027] main.c 85 : unable to locate 'stdint.h'

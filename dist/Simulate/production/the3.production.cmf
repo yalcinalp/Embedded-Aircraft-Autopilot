@@ -1,0 +1,891 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$/tmp/xcXCGgMop.o
+init CODE 0 26 26 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 4 300000 300000 E 1
+$dist/Simulate/production/the3.production.o
+intcodelo CODE 0 18 18 E 1
+cinit CODE 0 754 754 4A 1
+intcode_body CODE 0 6F8 6F8 5C 1
+text0 CODE 0 79E 79E 3E 1
+text1 CODE 0 95A 95A 6 1
+text2 CODE 0 2A 2A 41A 1
+text3 CODE 0 610 610 7A 1
+text4 CODE 0 946 946 A 1
+text5 CODE 0 8B8 8B8 1A 1
+text6 CODE 0 68A 68A 6E 1
+text7 CODE 0 90E 90E 10 1
+text8 CODE 0 58E 58E 82 1
+text9 CODE 0 898 898 20 1
+text10 CODE 0 966 966 4 1
+text11 CODE 0 96A 96A 4 1
+text12 CODE 0 950 950 A 1
+text13 CODE 0 960 960 6 1
+text14 CODE 0 91E 91E E 1
+text15 CODE 0 8FC 8FC 12 1
+text16 CODE 0 7DC 7DC 3E 1
+text17 CODE 0 92C 92C E 1
+text18 CODE 0 96E 96E 4 1
+text19 CODE 0 8D2 8D2 16 1
+text20 CODE 0 874 874 24 1
+text23 CODE 0 84C 84C 28 1
+text24 CODE 0 444 444 B4 1
+text25 CODE 0 81A 81A 32 1
+text26 CODE 0 93A 93A C 1
+text27 CODE 0 8E8 8E8 14 1
+text28 CODE 0 4F8 4F8 96 1
+cstackCOMRAM COMRAM 1 1C 1C 1B 1
+temp COMRAM 1 37 37 1 1
+bssBANK0 BANK0 1 60 60 80 1
+bssBANK1 BANK1 1 100 100 FF 1
+bssBANK2 BANK2 1 200 200 FF 1
+intcode CODE 0 8 8 6 1
+bssCOMRAM COMRAM 1 1 1 1B 1
+config CONFIG 4 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM E0-FF 1
+RAM 1FF-1FF 1
+RAM 2FF-F5F 1
+SFR F60-FFF 1
+BANK0 E0-FF 1
+BANK1 1FF-1FF 1
+BANK2 2FF-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 4-7 1
+CONST E-17 1
+CONST 972-1FFFF 1
+IDLOC 200000-200007 1
+STACK 2FF-F5F 1
+SMALLCONST 1000-1FFFF 1
+CODE 4-7 1
+CODE E-17 1
+CODE 972-1FFFF 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-F5F 1
+BIGRAM 38-5F 1
+BIGRAM E0-FF 1
+BIGRAM 1FF-1FF 1
+BIGRAM 2FF-F5F 1
+COMRAM 38-5F 1
+EEDATA F00000-F003FF 1
+MEDIUMCONST 1000-FFFF 1
+MEDIUMCONST 11000-1FFFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/Simulate/production/the3.production.o
+18 intcodelo CODE >3925:/tmp/xcXJmgMed.s
+18 intcodelo CODE >177:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+1E intcodelo CODE >178:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8 intcode CODE >3984:/tmp/xcXJmgMed.s
+8 intcode CODE >171:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+4F8 text28 CODE >123:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+4FA text28 CODE >124:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+530 text28 CODE >125:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+552 text28 CODE >126:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+560 text28 CODE >127:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+58C text28 CODE >130:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8E8 text27 CODE >148:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8E8 text27 CODE >149:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8EA text27 CODE >150:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8EC text27 CODE >151:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8EE text27 CODE >152:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8F8 text27 CODE >153:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8FA text27 CODE >154:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+93A text26 CODE >164:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+93A text26 CODE >166:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+93C text26 CODE >167:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+940 text26 CODE >168:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+944 text26 CODE >169:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+81A text25 CODE >117:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+81C text25 CODE >118:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+84A text25 CODE >119:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+444 text24 CODE >134:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+446 text24 CODE >136:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+45C text24 CODE >137:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+462 text24 CODE >139:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+498 text24 CODE >140:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+4BA text24 CODE >141:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+4C8 text24 CODE >142:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+4F4 text24 CODE >143:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+4F6 text24 CODE >145:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+84C text23 CODE >156:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+84C text23 CODE >157:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+84E text23 CODE >159:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+86A text23 CODE >161:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+872 text23 CODE >162:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+6F8 intcode_body CODE >171:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+70A intcode_body CODE >172:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+71C intcode_body CODE >173:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+72E intcode_body CODE >174:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+740 intcode_body CODE >175:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+874 text20 CODE >547:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+874 text20 CODE >549:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+876 text20 CODE >550:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+884 text20 CODE >551:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+896 text20 CODE >552:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8D2 text19 CODE >226:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8D2 text19 CODE >228:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8D6 text19 CODE >229:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8DA text19 CODE >230:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8DE text19 CODE >231:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8E2 text19 CODE >232:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8E6 text19 CODE >233:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+96E text18 CODE >96:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+96E text18 CODE >97:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+970 text18 CODE >98:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+92C text17 CODE >217:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+92C text17 CODE >219:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+92E text17 CODE >220:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+930 text17 CODE >221:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+932 text17 CODE >222:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+934 text17 CODE >223:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+938 text17 CODE >224:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7DC text16 CODE >181:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7DC text16 CODE >182:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7E0 text16 CODE >183:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7E4 text16 CODE >184:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7E8 text16 CODE >185:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7EC text16 CODE >186:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7F0 text16 CODE >187:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7F4 text16 CODE >188:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7F8 text16 CODE >189:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7FC text16 CODE >190:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+800 text16 CODE >191:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+804 text16 CODE >192:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+808 text16 CODE >193:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+80C text16 CODE >194:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+810 text16 CODE >195:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+814 text16 CODE >196:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+818 text16 CODE >197:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8FC text15 CODE >202:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8FC text15 CODE >207:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8FE text15 CODE >208:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+900 text15 CODE >209:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+902 text15 CODE >210:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+904 text15 CODE >211:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+906 text15 CODE >212:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+908 text15 CODE >213:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+90A text15 CODE >214:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+90C text15 CODE >215:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+91E text14 CODE >235:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+91E text14 CODE >237:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+922 text14 CODE >238:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+926 text14 CODE >239:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+92A text14 CODE >240:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+960 text13 CODE >287:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+960 text13 CODE >288:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+964 text13 CODE >289:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+950 text12 CODE >279:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+950 text12 CODE >280:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+958 text12 CODE >281:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+96A text11 CODE >92:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+96A text11 CODE >93:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+96C text11 CODE >94:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+966 text10 CODE >346:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+966 text10 CODE >347:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+968 text10 CODE >348:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+898 text9 CODE >318:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+89A text9 CODE >319:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8AA text9 CODE >320:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8B2 text9 CODE >322:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8B6 text9 CODE >325:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+58E text8 CODE >427:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+590 text8 CODE >428:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+596 text8 CODE >429:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+59C text8 CODE >430:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+5A2 text8 CODE >432:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+5A6 text8 CODE >433:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+5B0 text8 CODE >434:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+5BA text8 CODE >435:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+5C4 text8 CODE >436:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+5CE text8 CODE >439:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+5D6 text8 CODE >440:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+5E0 text8 CODE >441:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+5E8 text8 CODE >442:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+5F2 text8 CODE >444:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+5FC text8 CODE >445:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+606 text8 CODE >446:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+60A text8 CODE >447:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+60E text8 CODE >448:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+90E text7 CODE >274:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+90E text7 CODE >275:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+916 text7 CODE >276:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+91C text7 CODE >277:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+68A text6 CODE >295:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+68C text6 CODE >296:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+690 text6 CODE >297:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+690 text6 CODE >298:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+692 text6 CODE >299:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+694 text6 CODE >300:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+696 text6 CODE >301:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+698 text6 CODE >302:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+69C text6 CODE >303:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+69C text6 CODE >304:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+69E text6 CODE >305:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+6A2 text6 CODE >306:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+6A2 text6 CODE >307:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+6A4 text6 CODE >308:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+6A8 text6 CODE >309:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+6A8 text6 CODE >310:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+6AA text6 CODE >311:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+6AE text6 CODE >312:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+6AE text6 CODE >313:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+6B0 text6 CODE >314:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+6B4 text6 CODE >315:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+6F6 text6 CODE >316:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8B8 text5 CODE >291:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8BA text5 CODE >292:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8D0 text5 CODE >293:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+946 text4 CODE >283:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+946 text4 CODE >284:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+94E text4 CODE >285:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+610 text3 CODE >327:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+612 text3 CODE >328:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+632 text3 CODE >329:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+63A text3 CODE >330:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+65A text3 CODE >331:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+662 text3 CODE >332:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+686 text3 CODE >335:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+688 text3 CODE >336:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+2A text2 CODE >450:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+2A text2 CODE >451:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+2E text2 CODE >452:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+32 text2 CODE >453:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+3A text2 CODE >454:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+44 text2 CODE >455:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+48 text2 CODE >456:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+4C text2 CODE >458:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+50 text2 CODE >460:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+62 text2 CODE >461:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+6A text2 CODE >465:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7A text2 CODE >466:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7C text2 CODE >467:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+8E text2 CODE >468:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+C4 text2 CODE >469:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+C8 text2 CODE >470:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+CC text2 CODE >471:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+106 text2 CODE >472:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+10A text2 CODE >473:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+10E text2 CODE >474:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+148 text2 CODE >475:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+14C text2 CODE >476:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+150 text2 CODE >477:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+18A text2 CODE >478:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+18E text2 CODE >479:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+192 text2 CODE >480:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+1CC text2 CODE >481:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+1D0 text2 CODE >482:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+1D4 text2 CODE >483:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+20E text2 CODE >484:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+212 text2 CODE >485:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+216 text2 CODE >486:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+21A text2 CODE >487:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+21E text2 CODE >488:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+222 text2 CODE >490:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+226 text2 CODE >491:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+22A text2 CODE >492:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+232 text2 CODE >497:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+2B0 text2 CODE >498:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+2C8 text2 CODE >499:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+2EC text2 CODE >503:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+2FC text2 CODE >504:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+312 text2 CODE >508:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+324 text2 CODE >509:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+330 text2 CODE >510:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+332 text2 CODE >511:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+336 text2 CODE >512:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+34C text2 CODE >515:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+358 text2 CODE >516:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+35C text2 CODE >518:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+360 text2 CODE >519:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+364 text2 CODE >521:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+370 text2 CODE >522:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+374 text2 CODE >524:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+380 text2 CODE >525:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+384 text2 CODE >527:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+38A text2 CODE >528:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+38E text2 CODE >530:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+394 text2 CODE >531:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+398 text2 CODE >532:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+3E2 text2 CODE >534:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+3E6 text2 CODE >535:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+3EA text2 CODE >536:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+3F6 text2 CODE >540:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+428 text2 CODE >452:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+43E text2 CODE >544:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+442 text2 CODE >545:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+95A text1 CODE >242:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+95A text1 CODE >243:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+95C text1 CODE >244:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+95E text1 CODE >245:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+79E text0 CODE >554:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+79E text0 CODE >555:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7A2 text0 CODE >556:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7A6 text0 CODE >557:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7AA text0 CODE >558:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7AE text0 CODE >559:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7B2 text0 CODE >560:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7B6 text0 CODE >563:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7BA text0 CODE >564:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+7BE text0 CODE >565:/home/bs2021/e2580181/Desktop/embed/the3.X/the3/main.c
+754 cinit CODE >702:/tmp/xcXJmgMed.s
+754 cinit CODE >704:/tmp/xcXJmgMed.s
+754 cinit CODE >707:/tmp/xcXJmgMed.s
+754 cinit CODE >797:/tmp/xcXJmgMed.s
+758 cinit CODE >798:/tmp/xcXJmgMed.s
+75C cinit CODE >799:/tmp/xcXJmgMed.s
+75C cinit CODE >800:/tmp/xcXJmgMed.s
+75E cinit CODE >801:/tmp/xcXJmgMed.s
+760 cinit CODE >802:/tmp/xcXJmgMed.s
+762 cinit CODE >803:/tmp/xcXJmgMed.s
+764 cinit CODE >804:/tmp/xcXJmgMed.s
+766 cinit CODE >805:/tmp/xcXJmgMed.s
+768 cinit CODE >808:/tmp/xcXJmgMed.s
+76C cinit CODE >809:/tmp/xcXJmgMed.s
+770 cinit CODE >810:/tmp/xcXJmgMed.s
+770 cinit CODE >811:/tmp/xcXJmgMed.s
+772 cinit CODE >812:/tmp/xcXJmgMed.s
+774 cinit CODE >813:/tmp/xcXJmgMed.s
+776 cinit CODE >814:/tmp/xcXJmgMed.s
+778 cinit CODE >815:/tmp/xcXJmgMed.s
+77A cinit CODE >816:/tmp/xcXJmgMed.s
+77C cinit CODE >819:/tmp/xcXJmgMed.s
+780 cinit CODE >820:/tmp/xcXJmgMed.s
+782 cinit CODE >821:/tmp/xcXJmgMed.s
+782 cinit CODE >822:/tmp/xcXJmgMed.s
+784 cinit CODE >823:/tmp/xcXJmgMed.s
+786 cinit CODE >824:/tmp/xcXJmgMed.s
+788 cinit CODE >827:/tmp/xcXJmgMed.s
+78C cinit CODE >828:/tmp/xcXJmgMed.s
+78E cinit CODE >829:/tmp/xcXJmgMed.s
+78E cinit CODE >830:/tmp/xcXJmgMed.s
+790 cinit CODE >831:/tmp/xcXJmgMed.s
+792 cinit CODE >832:/tmp/xcXJmgMed.s
+794 cinit CODE >838:/tmp/xcXJmgMed.s
+794 cinit CODE >840:/tmp/xcXJmgMed.s
+796 cinit CODE >841:/tmp/xcXJmgMed.s
+798 cinit CODE >842:/tmp/xcXJmgMed.s
+79A cinit CODE >843:/tmp/xcXJmgMed.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/Simulate/production/the3.production.o
+__Hspace_0 1000 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Hspace_1 2FF 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Hspace_2 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/Simulate/production/the3.production.o
+__end_of_init_interrupts 93A 0 CODE 0 text17 dist/Simulate/production/the3.production.o
+__size_of_init_adc 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__size_of_transmit_isr 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/Simulate/production/the3.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcXCGgMop.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/Simulate/production/the3.production.o
+get_led@led 2A 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/Simulate/production/the3.production.o
+_LATA F89 0 ABS 0 - dist/Simulate/production/the3.production.o
+_LATB F8A 0 ABS 0 - dist/Simulate/production/the3.production.o
+_LATC F8B 0 ABS 0 - dist/Simulate/production/the3.production.o
+_LATD F8C 0 ABS 0 - dist/Simulate/production/the3.production.o
+_LATH F90 0 ABS 0 - dist/Simulate/production/the3.production.o
+___sp 0 0 STACK 2 stack /tmp/xcXCGgMop.o
+_dist E 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+_head 6 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+_main 79E 0 CODE 0 text0 dist/Simulate/production/the3.production.o
+_send 966 0 CODE 0 text10 dist/Simulate/production/the3.production.o
+_tail 4 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+btemp 37 0 COMRAM 1 temp dist/Simulate/production/the3.production.o
+start 26 0 CODE 0 init /tmp/xcXCGgMop.o
+__end_of_timer_isr 946 0 CODE 0 text26 dist/Simulate/production/the3.production.o
+__size_of_main 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__size_of_send 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/Simulate/production/the3.production.o
+__size_of_timer_isr 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__size_of_get_manual 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+_get_end 950 0 CODE 0 text12 dist/Simulate/production/the3.production.o
+_get_led 68A 0 CODE 0 text6 dist/Simulate/production/the3.production.o
+buf_pop@v 21 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+__end_of_transmit_isr 874 0 CODE 0 text23 dist/Simulate/production/the3.production.o
+__size_of_init_serial 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__size_of_receive_isr 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Hpowerup 26 0 CODE 0 powerup dist/Simulate/production/the3.production.o
+_T0CONbits FD5 0 ABS 0 - dist/Simulate/production/the3.production.o
+ttemp5 38 0 COMRAM 1 temp dist/Simulate/production/the3.production.o
+ttemp6 3B 0 COMRAM 1 temp dist/Simulate/production/the3.production.o
+ttemp7 3F 0 COMRAM 1 temp dist/Simulate/production/the3.production.o
+_timer_isr 93A 0 CODE 0 text26 dist/Simulate/production/the3.production.o
+_output_st 10 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+_init_interrupts 92C 0 CODE 0 text17 dist/Simulate/production/the3.production.o
+__accesstop 60 0 ABS 0 - /tmp/xcXCGgMop.o
+intlevel0 0 0 CODE 0 text /tmp/xcXCGgMop.o
+intlevel1 0 0 CODE 0 text /tmp/xcXCGgMop.o
+intlevel2 0 0 CODE 0 text /tmp/xcXCGgMop.o
+intlevel3 0 0 CODE 0 text /tmp/xcXCGgMop.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/Simulate/production/the3.production.o
+_init_adc 8D2 0 CODE 0 text19 dist/Simulate/production/the3.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/Simulate/production/the3.production.o
+_buf_isempty 81A 0 CODE 0 text25 dist/Simulate/production/the3.production.o
+wtemp8 38 0 COMRAM 1 temp dist/Simulate/production/the3.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/Simulate/production/the3.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/Simulate/production/the3.production.o
+__end_of_init_adc 8E8 0 CODE 0 text19 dist/Simulate/production/the3.production.o
+__size_of_buf_pop 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+_ADCON0 FC2 0 ABS 0 - dist/Simulate/production/the3.production.o
+_ADCON1 FC1 0 ABS 0 - dist/Simulate/production/the3.production.o
+_ADCON2 FC0 0 ABS 0 - dist/Simulate/production/the3.production.o
+_ADRESH FC4 0 ABS 0 - dist/Simulate/production/the3.production.o
+_ADRESL FC3 0 ABS 0 - dist/Simulate/production/the3.production.o
+_pkt_state 14 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+_pkt_valid 12 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+___inthi_sp 0 0 STACK 2 stack /tmp/xcXCGgMop.o
+___intlo_sp 0 0 STACK 2 stack /tmp/xcXCGgMop.o
+_is_manual 1A 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/Simulate/production/the3.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/Simulate/production/the3.production.o
+_TXSTA1bits FAC 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/Simulate/production/the3.production.o
+__size_of_init_ports 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__size_of_init_timer 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Hintcodelo 26 0 CODE 0 intcodelo dist/Simulate/production/the3.production.o
+_parsed_digit_count 15 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+get_go@distance 2D 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+__end_of_get_go 91E 0 CODE 0 text7 dist/Simulate/production/the3.production.o
+__size_of_parse 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Lintcodelo 18 0 CODE 0 intcodelo dist/Simulate/production/the3.production.o
+send_button_press@button 2B 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+start_initialization 754 0 CODE 0 cinit dist/Simulate/production/the3.production.o
+_lowPriorityISR 18 0 CODE 0 intcodelo dist/Simulate/production/the3.production.o
+__size_of_init_interrupts 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/Simulate/production/the3.production.o
+_get_altitude 960 0 CODE 0 text13 dist/Simulate/production/the3.production.o
+___rparam_used 1 0 ABS 0 - dist/Simulate/production/the3.production.o
+_RCREG1 FAE 0 ABS 0 - dist/Simulate/production/the3.production.o
+__end_of_buf_pop 4F8 0 CODE 0 text24 dist/Simulate/production/the3.production.o
+_parsed_number 8 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+_SPBRG1 FAF 0 ABS 0 - dist/Simulate/production/the3.production.o
+_TXREG1 FAD 0 ABS 0 - dist/Simulate/production/the3.production.o
+_start_system 95A 0 CODE 0 text1 dist/Simulate/production/the3.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/Simulate/production/the3.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/Simulate/production/the3.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/Simulate/production/the3.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/Simulate/production/the3.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/Simulate/production/the3.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/Simulate/production/the3.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/Simulate/production/the3.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/Simulate/production/the3.production.o
+__Hbank8 0 0 ABS 0 bank8 dist/Simulate/production/the3.production.o
+__Hbank9 0 0 ABS 0 bank9 dist/Simulate/production/the3.production.o
+__Hcinit 0 0 ABS 0 cinit dist/Simulate/production/the3.production.o
+__Hconst 0 0 CONST 0 const dist/Simulate/production/the3.production.o
+__Hidata 0 0 CODE 0 idata dist/Simulate/production/the3.production.o
+__Hidloc 0 0 ABS 0 idloc dist/Simulate/production/the3.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/Simulate/production/the3.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/Simulate/production/the3.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/Simulate/production/the3.production.o
+__Hstack 0 0 STACK 2 stack dist/Simulate/production/the3.production.o
+__Htext0 0 0 ABS 0 text0 dist/Simulate/production/the3.production.o
+__Htext1 0 0 ABS 0 text1 dist/Simulate/production/the3.production.o
+__Htext2 0 0 ABS 0 text2 dist/Simulate/production/the3.production.o
+__Htext3 0 0 ABS 0 text3 dist/Simulate/production/the3.production.o
+__Htext4 0 0 ABS 0 text4 dist/Simulate/production/the3.production.o
+__Htext5 0 0 ABS 0 text5 dist/Simulate/production/the3.production.o
+__Htext6 0 0 ABS 0 text6 dist/Simulate/production/the3.production.o
+__Htext7 0 0 ABS 0 text7 dist/Simulate/production/the3.production.o
+__Htext8 0 0 ABS 0 text8 dist/Simulate/production/the3.production.o
+__Htext9 0 0 ABS 0 text9 dist/Simulate/production/the3.production.o
+__end_of_to_hex 8B8 0 CODE 0 text9 dist/Simulate/production/the3.production.o
+__Hbank10 0 0 ABS 0 bank10 dist/Simulate/production/the3.production.o
+__Hbank11 0 0 ABS 0 bank11 dist/Simulate/production/the3.production.o
+__Hbank12 0 0 ABS 0 bank12 dist/Simulate/production/the3.production.o
+__Hbank13 0 0 ABS 0 bank13 dist/Simulate/production/the3.production.o
+__Hbank14 0 0 ABS 0 bank14 dist/Simulate/production/the3.production.o
+__Hbank15 0 0 ABS 0 bank15 dist/Simulate/production/the3.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/Simulate/production/the3.production.o
+__Hbigram 0 0 ABS 0 bigram dist/Simulate/production/the3.production.o
+__smallconst 0 0 SMALLCONST 0 smallconst /tmp/xcXCGgMop.o
+_init_serial 8FC 0 CODE 0 text15 dist/Simulate/production/the3.production.o
+__size_of_get_altitude 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+_receive_isr 8E8 0 CODE 0 text27 dist/Simulate/production/the3.production.o
+__Hcomram 0 0 ABS 0 comram dist/Simulate/production/the3.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/Simulate/production/the3.production.o
+__end_of_lowPriorityISR 26 0 CODE 0 intcodelo dist/Simulate/production/the3.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/Simulate/production/the3.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/Simulate/production/the3.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/Simulate/production/the3.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/Simulate/production/the3.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/Simulate/production/the3.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/Simulate/production/the3.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/Simulate/production/the3.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/Simulate/production/the3.production.o
+__Lbank8 0 0 ABS 0 bank8 dist/Simulate/production/the3.production.o
+__Lbank9 0 0 ABS 0 bank9 dist/Simulate/production/the3.production.o
+__Lcinit 0 0 ABS 0 cinit dist/Simulate/production/the3.production.o
+__Lconst 0 0 CONST 0 const dist/Simulate/production/the3.production.o
+__Lidata 0 0 CODE 0 idata dist/Simulate/production/the3.production.o
+__Lidloc 0 0 ABS 0 idloc dist/Simulate/production/the3.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/Simulate/production/the3.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/Simulate/production/the3.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/Simulate/production/the3.production.o
+__Lstack 0 0 STACK 2 stack dist/Simulate/production/the3.production.o
+__Ltext0 0 0 ABS 0 text0 dist/Simulate/production/the3.production.o
+__Ltext1 0 0 ABS 0 text1 dist/Simulate/production/the3.production.o
+__Ltext2 0 0 ABS 0 text2 dist/Simulate/production/the3.production.o
+__Ltext3 0 0 ABS 0 text3 dist/Simulate/production/the3.production.o
+__Ltext4 0 0 ABS 0 text4 dist/Simulate/production/the3.production.o
+__Ltext5 0 0 ABS 0 text5 dist/Simulate/production/the3.production.o
+__Ltext6 0 0 ABS 0 text6 dist/Simulate/production/the3.production.o
+__Ltext7 0 0 ABS 0 text7 dist/Simulate/production/the3.production.o
+__Ltext8 0 0 ABS 0 text8 dist/Simulate/production/the3.production.o
+__Ltext9 0 0 ABS 0 text9 dist/Simulate/production/the3.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/Simulate/production/the3.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/Simulate/production/the3.production.o
+_INTCONbits FF2 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Habs1 0 0 ABS 0 abs1 dist/Simulate/production/the3.production.o
+__Hdata 0 0 ABS 0 data dist/Simulate/production/the3.production.o
+__Hinit 2A 0 CODE 0 init dist/Simulate/production/the3.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/Simulate/production/the3.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/Simulate/production/the3.production.o
+__Htemp 38 0 COMRAM 1 temp dist/Simulate/production/the3.production.o
+__Htext 0 0 ABS 0 text dist/Simulate/production/the3.production.o
+__Labs1 0 0 ABS 0 abs1 dist/Simulate/production/the3.production.o
+__Ldata 0 0 ABS 0 data dist/Simulate/production/the3.production.o
+__Linit 26 0 CODE 0 init dist/Simulate/production/the3.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/Simulate/production/the3.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/Simulate/production/the3.production.o
+__Ltemp 37 0 COMRAM 1 temp dist/Simulate/production/the3.production.o
+__Ltext 0 0 ABS 0 text dist/Simulate/production/the3.production.o
+to_nibble@nibble 28 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+__end_of_to_nibble 68A 0 CODE 0 text3 dist/Simulate/production/the3.production.o
+int$flags 37 0 COMRAM 1 temp dist/Simulate/production/the3.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/Simulate/production/the3.production.o
+_message_pos 17 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+__size_of_to_nibble 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Hintret 0 0 ABS 0 intret dist/Simulate/production/the3.production.o
+__Hirdata 0 0 CODE 0 irdata dist/Simulate/production/the3.production.o
+__S0 972 0 ABS 0 - dist/Simulate/production/the3.production.o
+__S1 2FF 0 ABS 0 - dist/Simulate/production/the3.production.o
+__S2 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__S4 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__S5 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+_adc C 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+__end_of_get_altitude 966 0 CODE 0 text13 dist/Simulate/production/the3.production.o
+buf_push@buf 1C 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+__size_of_start_system 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__end_of_disable_interrupts 96E 0 CODE 0 text11 dist/Simulate/production/the3.production.o
+__end_of_get_speed 950 0 CODE 0 text4 dist/Simulate/production/the3.production.o
+__size_of_get_speed 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/Simulate/production/the3.production.o
+_to_nibble 610 0 CODE 0 text3 dist/Simulate/production/the3.production.o
+__size_of_get_end 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__size_of_get_led 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/Simulate/production/the3.production.o
+__size_of_enable_interrupts 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__end_of_buf_isempty 84C 0 CODE 0 text25 dist/Simulate/production/the3.production.o
+int_func 6F8 0 CODE 0 intcode_body dist/Simulate/production/the3.production.o
+_parse$973 32 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+_get_go 90E 0 CODE 0 text7 dist/Simulate/production/the3.production.o
+get_altitude@period 28 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+__Lintentry 0 0 ABS 0 intentry dist/Simulate/production/the3.production.o
+__Hramtop 1000 0 RAM 0 ramtop dist/Simulate/production/the3.production.o
+__end_of_start_system 960 0 CODE 0 text1 dist/Simulate/production/the3.production.o
+_get_speed 946 0 CODE 0 text4 dist/Simulate/production/the3.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/Simulate/production/the3.production.o
+__size_of_adc_task 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__size_of_send_button_press 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__end_of_highPriorityISR 754 0 CODE 0 intcode_body dist/Simulate/production/the3.production.o
+__activetblptr 3 0 ABS 0 - dist/Simulate/production/the3.production.o
+send_button_press@hex 2C 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/Simulate/production/the3.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/Simulate/production/the3.production.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/Simulate/production/the3.production.o
+__LbssBANK2 0 0 ABS 0 bssBANK2 dist/Simulate/production/the3.production.o
+__Htext10 0 0 ABS 0 text10 dist/Simulate/production/the3.production.o
+__Htext11 0 0 ABS 0 text11 dist/Simulate/production/the3.production.o
+__Htext12 0 0 ABS 0 text12 dist/Simulate/production/the3.production.o
+__Htext13 0 0 ABS 0 text13 dist/Simulate/production/the3.production.o
+__Htext14 0 0 ABS 0 text14 dist/Simulate/production/the3.production.o
+__Htext15 0 0 ABS 0 text15 dist/Simulate/production/the3.production.o
+__Htext16 0 0 ABS 0 text16 dist/Simulate/production/the3.production.o
+__Htext17 0 0 ABS 0 text17 dist/Simulate/production/the3.production.o
+__Htext18 0 0 ABS 0 text18 dist/Simulate/production/the3.production.o
+__Htext19 0 0 ABS 0 text19 dist/Simulate/production/the3.production.o
+__Htext20 0 0 ABS 0 text20 dist/Simulate/production/the3.production.o
+__Htext23 0 0 ABS 0 text23 dist/Simulate/production/the3.production.o
+__Htext24 0 0 ABS 0 text24 dist/Simulate/production/the3.production.o
+__Htext25 0 0 ABS 0 text25 dist/Simulate/production/the3.production.o
+__Htext26 0 0 ABS 0 text26 dist/Simulate/production/the3.production.o
+__Htext27 0 0 ABS 0 text27 dist/Simulate/production/the3.production.o
+__Htext28 0 0 ABS 0 text28 dist/Simulate/production/the3.production.o
+_disable_interrupts 96A 0 CODE 0 text11 dist/Simulate/production/the3.production.o
+_RCSTAbits FAB 0 ABS 0 - dist/Simulate/production/the3.production.o
+_PIE1bits F9D 0 ABS 0 - dist/Simulate/production/the3.production.o
+__ptext10 966 0 CODE 0 text10 dist/Simulate/production/the3.production.o
+__ptext11 96A 0 CODE 0 text11 dist/Simulate/production/the3.production.o
+__ptext12 950 0 CODE 0 text12 dist/Simulate/production/the3.production.o
+__ptext13 960 0 CODE 0 text13 dist/Simulate/production/the3.production.o
+__ptext14 91E 0 CODE 0 text14 dist/Simulate/production/the3.production.o
+__ptext15 8FC 0 CODE 0 text15 dist/Simulate/production/the3.production.o
+__ptext16 7DC 0 CODE 0 text16 dist/Simulate/production/the3.production.o
+__ptext17 92C 0 CODE 0 text17 dist/Simulate/production/the3.production.o
+__ptext18 96E 0 CODE 0 text18 dist/Simulate/production/the3.production.o
+__ptext19 8D2 0 CODE 0 text19 dist/Simulate/production/the3.production.o
+__ptext20 874 0 CODE 0 text20 dist/Simulate/production/the3.production.o
+__ptext23 84C 0 CODE 0 text23 dist/Simulate/production/the3.production.o
+__ptext24 444 0 CODE 0 text24 dist/Simulate/production/the3.production.o
+__ptext25 81A 0 CODE 0 text25 dist/Simulate/production/the3.production.o
+__ptext26 93A 0 CODE 0 text26 dist/Simulate/production/the3.production.o
+__ptext27 8E8 0 CODE 0 text27 dist/Simulate/production/the3.production.o
+__ptext28 4F8 0 CODE 0 text28 dist/Simulate/production/the3.production.o
+get_speed@spd 28 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+__pintcode_body 6F8 0 CODE 0 intcode_body dist/Simulate/production/the3.production.o
+__Lbank10 0 0 ABS 0 bank10 dist/Simulate/production/the3.production.o
+__Lbank11 0 0 ABS 0 bank11 dist/Simulate/production/the3.production.o
+__Lbank12 0 0 ABS 0 bank12 dist/Simulate/production/the3.production.o
+__Lbank13 0 0 ABS 0 bank13 dist/Simulate/production/the3.production.o
+__Lbank14 0 0 ABS 0 bank14 dist/Simulate/production/the3.production.o
+__Lbank15 0 0 ABS 0 bank15 dist/Simulate/production/the3.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/Simulate/production/the3.production.o
+__Lbigram 0 0 ABS 0 bigram dist/Simulate/production/the3.production.o
+_outbuf 200 0 BANK2 1 bssBANK2 dist/Simulate/production/the3.production.o
+buf_pop@buf 22 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+__size_of_buf_push 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+_pkt_id 11 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+__Lcomram 0 0 ABS 0 comram dist/Simulate/production/the3.production.o
+__Lconfig 0 0 CONFIG 4 config dist/Simulate/production/the3.production.o
+_get_manual 8B8 0 CODE 0 text5 dist/Simulate/production/the3.production.o
+_LATAbits F89 0 ABS 0 - dist/Simulate/production/the3.production.o
+_LATBbits F8A 0 ABS 0 - dist/Simulate/production/the3.production.o
+_LATCbits F8B 0 ABS 0 - dist/Simulate/production/the3.production.o
+_LATDbits F8C 0 ABS 0 - dist/Simulate/production/the3.production.o
+__size_of_get_go 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+_RCSTA1bits FAB 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/Simulate/production/the3.production.o
+_parse_state 19 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/Simulate/production/the3.production.o
+_to_hex 898 0 CODE 0 text9 dist/Simulate/production/the3.production.o
+stackhi F5F 0 ABS 0 - /tmp/xcXCGgMop.o
+stacklo 2FF 0 ABS 0 - /tmp/xcXCGgMop.o
+__Lintcode 8 0 CODE 0 intcode dist/Simulate/production/the3.production.o
+__Lintret 0 0 ABS 0 intret dist/Simulate/production/the3.production.o
+_highPriorityISR 8 0 CODE 0 intcode dist/Simulate/production/the3.production.o
+__Lirdata 0 0 CODE 0 irdata dist/Simulate/production/the3.production.o
+_ADCON0bits FC2 0 ABS 0 - dist/Simulate/production/the3.production.o
+_adc_task 874 0 CODE 0 text20 dist/Simulate/production/the3.production.o
+__Lspace_0 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Lspace_1 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Lspace_2 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Lspace_4 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+_PIR1bits F9E 0 ABS 0 - dist/Simulate/production/the3.production.o
+__end_of_get_end 95A 0 CODE 0 text12 dist/Simulate/production/the3.production.o
+__end_of_get_led 6F8 0 CODE 0 text6 dist/Simulate/production/the3.production.o
+__end_of_adc_task 898 0 CODE 0 text20 dist/Simulate/production/the3.production.o
+_buf_pop 444 0 CODE 0 text24 dist/Simulate/production/the3.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/Simulate/production/the3.production.o
+to_hex@nibble 28 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+end_of_initialization 794 0 CODE 0 cinit dist/Simulate/production/the3.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/Simulate/production/the3.production.o
+__Hintentry 0 0 ABS 0 intentry dist/Simulate/production/the3.production.o
+buf_push@v 1F 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+_buf_push 4F8 0 CODE 0 text28 dist/Simulate/production/the3.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/Simulate/production/the3.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/Simulate/production/the3.production.o
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/Simulate/production/the3.production.o
+__HbssBANK2 0 0 ABS 0 bssBANK2 dist/Simulate/production/the3.production.o
+__end_of_enable_interrupts 972 0 CODE 0 text18 dist/Simulate/production/the3.production.o
+__Lramtop 1000 0 RAM 0 ramtop dist/Simulate/production/the3.production.o
+__end_of_get_manual 8D2 0 CODE 0 text5 dist/Simulate/production/the3.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/Simulate/production/the3.production.o
+__pcinit 754 0 CODE 0 cinit dist/Simulate/production/the3.production.o
+__size_of_to_hex 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__ptext0 79E 0 CODE 0 text0 dist/Simulate/production/the3.production.o
+__ptext1 95A 0 CODE 0 text1 dist/Simulate/production/the3.production.o
+__ptext2 2A 0 CODE 0 text2 dist/Simulate/production/the3.production.o
+__ptext3 610 0 CODE 0 text3 dist/Simulate/production/the3.production.o
+__ptext4 946 0 CODE 0 text4 dist/Simulate/production/the3.production.o
+__ptext5 8B8 0 CODE 0 text5 dist/Simulate/production/the3.production.o
+__ptext6 68A 0 CODE 0 text6 dist/Simulate/production/the3.production.o
+__ptext7 90E 0 CODE 0 text7 dist/Simulate/production/the3.production.o
+__ptext8 58E 0 CODE 0 text8 dist/Simulate/production/the3.production.o
+__ptext9 898 0 CODE 0 text9 dist/Simulate/production/the3.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/Simulate/production/the3.production.o
+__end_of_buf_push 58E 0 CODE 0 text28 dist/Simulate/production/the3.production.o
+get_manual@activation 28 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+_altitude_period 1B 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+__Ltext10 0 0 ABS 0 text10 dist/Simulate/production/the3.production.o
+__Ltext11 0 0 ABS 0 text11 dist/Simulate/production/the3.production.o
+__Ltext12 0 0 ABS 0 text12 dist/Simulate/production/the3.production.o
+__Ltext13 0 0 ABS 0 text13 dist/Simulate/production/the3.production.o
+__Ltext14 0 0 ABS 0 text14 dist/Simulate/production/the3.production.o
+__Ltext15 0 0 ABS 0 text15 dist/Simulate/production/the3.production.o
+__Ltext16 0 0 ABS 0 text16 dist/Simulate/production/the3.production.o
+__Ltext17 0 0 ABS 0 text17 dist/Simulate/production/the3.production.o
+__Ltext18 0 0 ABS 0 text18 dist/Simulate/production/the3.production.o
+__Ltext19 0 0 ABS 0 text19 dist/Simulate/production/the3.production.o
+__Ltext20 0 0 ABS 0 text20 dist/Simulate/production/the3.production.o
+__Ltext23 0 0 ABS 0 text23 dist/Simulate/production/the3.production.o
+__Ltext24 0 0 ABS 0 text24 dist/Simulate/production/the3.production.o
+__Ltext25 0 0 ABS 0 text25 dist/Simulate/production/the3.production.o
+__Ltext26 0 0 ABS 0 text26 dist/Simulate/production/the3.production.o
+__Ltext27 0 0 ABS 0 text27 dist/Simulate/production/the3.production.o
+__Ltext28 0 0 ABS 0 text28 dist/Simulate/production/the3.production.o
+parse@value 34 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+__ramtop 1000 0 RAM 0 ramtop /tmp/xcXCGgMop.o
+_pkt_body 60 0 BANK0 1 bssBANK0 dist/Simulate/production/the3.production.o
+__end_of_send_button_press 610 0 CODE 0 text8 dist/Simulate/production/the3.production.o
+__Lpowerup 26 0 CODE 0 powerup dist/Simulate/production/the3.production.o
+_digit_count_to_be_parsed 16 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+_init_ports 7DC 0 CODE 0 text16 dist/Simulate/production/the3.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/Simulate/production/the3.production.o
+_init_timer 91E 0 CODE 0 text14 dist/Simulate/production/the3.production.o
+buf_isempty@buf 1E 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+__size_of_buf_isempty 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/Simulate/production/the3.production.o
+__end_of_init_serial 90E 0 CODE 0 text15 dist/Simulate/production/the3.production.o
+__end_of_receive_isr 8FC 0 CODE 0 text27 dist/Simulate/production/the3.production.o
+___param_bank 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/Simulate/production/the3.production.o
+__end_of__initialization 794 0 CODE 0 cinit dist/Simulate/production/the3.production.o
+parse@is_digit 33 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/Simulate/production/the3.production.o
+send_button_press@nibble0 29 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+send_button_press@nibble1 2A 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+_pkt_bodysize 13 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/Simulate/production/the3.production.o
+parse@is_end 31 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+__size_of_lowPriorityISR 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__size_of_highPriorityISR 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__pintcodelo 18 0 CODE 0 intcodelo dist/Simulate/production/the3.production.o
+__pcstackCOMRAM 1C 0 COMRAM 1 cstackCOMRAM dist/Simulate/production/the3.production.o
+__end_of_main 7DC 0 CODE 0 text0 dist/Simulate/production/the3.production.o
+__end_of_send 96A 0 CODE 0 text10 dist/Simulate/production/the3.production.o
+__pintcode 8 0 CODE 0 intcode dist/Simulate/production/the3.production.o
+_message_name 1 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+_message_type 18 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+_PORTA F80 0 ABS 0 - dist/Simulate/production/the3.production.o
+_PORTB F81 0 ABS 0 - dist/Simulate/production/the3.production.o
+_PORTC F82 0 ABS 0 - dist/Simulate/production/the3.production.o
+_PORTD F83 0 ABS 0 - dist/Simulate/production/the3.production.o
+_PORTH F87 0 ABS 0 - dist/Simulate/production/the3.production.o
+_T0CON FD5 0 ABS 0 - dist/Simulate/production/the3.production.o
+_TMR0H FD7 0 ABS 0 - dist/Simulate/production/the3.production.o
+_TMR0L FD6 0 ABS 0 - dist/Simulate/production/the3.production.o
+_TRISA F92 0 ABS 0 - dist/Simulate/production/the3.production.o
+_TRISB F93 0 ABS 0 - dist/Simulate/production/the3.production.o
+_TRISC F94 0 ABS 0 - dist/Simulate/production/the3.production.o
+_TRISD F95 0 ABS 0 - dist/Simulate/production/the3.production.o
+_TRISH F99 0 ABS 0 - dist/Simulate/production/the3.production.o
+__end_of_parse 444 0 CODE 0 text2 dist/Simulate/production/the3.production.o
+__HRAM 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Hbss 0 0 RAM 1 bss dist/Simulate/production/the3.production.o
+__Hram 0 0 ABS 0 ram dist/Simulate/production/the3.production.o
+__Hsfr 0 0 ABS 0 sfr dist/Simulate/production/the3.production.o
+__LRAM 1 0 ABS 0 - dist/Simulate/production/the3.production.o
+__Lbss 0 0 RAM 1 bss dist/Simulate/production/the3.production.o
+__Lram 0 0 ABS 0 ram dist/Simulate/production/the3.production.o
+__Lsfr 0 0 ABS 0 sfr dist/Simulate/production/the3.production.o
+_inbuf 100 0 BANK1 1 bssBANK1 dist/Simulate/production/the3.production.o
+_parse 2A 0 CODE 0 text2 dist/Simulate/production/the3.production.o
+_transmit_isr 84C 0 CODE 0 text23 dist/Simulate/production/the3.production.o
+_speed A 0 COMRAM 1 bssCOMRAM dist/Simulate/production/the3.production.o
+___extmem_base 20000 0 ABS 0 - /tmp/xcXCGgMop.o
+__end_of_init_ports 81A 0 CODE 0 text16 dist/Simulate/production/the3.production.o
+__end_of_init_timer 92C 0 CODE 0 text14 dist/Simulate/production/the3.production.o
+_enable_interrupts 96E 0 CODE 0 text18 dist/Simulate/production/the3.production.o
+__size_of_disable_interrupts 0 0 ABS 0 - dist/Simulate/production/the3.production.o
+__initialization 754 0 CODE 0 cinit dist/Simulate/production/the3.production.o
+_BAUDCON1bits F7E 0 ABS 0 - dist/Simulate/production/the3.production.o
+__pbssBANK0 60 0 BANK0 1 bssBANK0 dist/Simulate/production/the3.production.o
+__pbssBANK1 100 0 BANK1 1 bssBANK1 dist/Simulate/production/the3.production.o
+__pbssBANK2 200 0 BANK2 1 bssBANK2 dist/Simulate/production/the3.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/Simulate/production/the3.production.o
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/Simulate/production/the3.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/Simulate/production/the3.production.o
+_send_button_press 58E 0 CODE 0 text8 dist/Simulate/production/the3.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/Simulate/production/the3.production.o
+__Hintcode E 0 CODE 0 intcode dist/Simulate/production/the3.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+intcodelo 0 18 18 95A 1
+reset_vec 0 0 0 4 1
+bssBANK0 1 60 60 80 1
+bssBANK1 1 100 100 FF 1
+bssBANK2 1 200 200 FF 1
+intcode 0 8 8 6 1
+bssCOMRAM 1 1 1 37 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
