@@ -1,0 +1,48 @@
+{
+  // needs to be overwritten with the time go command is sent
+  "go-time": 0,
+  // Led timeout in seconds
+  "led-timeout": 4,
+  // Period in seconds
+  "period": 0.1,
+  // The delay of the period finished notifications and period processing deadline
+  "period-offset": 0.05,
+  "total-distance": 8000,
+  "manual": {
+    "manual-enter": 10,
+    "manual-exit": 25,
+    "leds": [
+      {
+        "start-time": 12,
+        "button": 1
+      },
+      {
+        "start-time": 17,
+        "button": 4
+      }
+    ]
+  },
+  "altitude-controls": [
+    {
+      "enter": 30,
+      "exit": 50,
+      "events": [
+        // Always start with a freq type event
+        // Sets ADC reading period to 200. Consumes 1 period (like "count": 1)
+        {"type": "freq", "value": 200},
+        // Do not enforce any constraint for 20 periods
+        {"type": "free", "count": 20},
+        // Expects altitude reading to be 9000 for 20 periods (whether we read altitude or we don't, 20 periods pass)
+        {"type": "altitude", "value": 9000, "count": 41},
+        //{"type": "freq", "value": 200},
+        {"type": "freq", "value": 600},
+        // Do not enforce any constraint for 20 periods
+        {"type": "free", "count": 20},
+        {"type": "altitude", "value": 12000, "count": 40},
+        {"type": "free", "count": 10},
+        {"type": "altitude", "value": 11000, "count": 40}
+      ]
+    }
+  ]
+}
+

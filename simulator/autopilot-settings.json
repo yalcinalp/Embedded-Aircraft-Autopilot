@@ -1,0 +1,6 @@
+{
+  "PORT": "/dev/ttyUSB0",
+  "BAUDRATE": 115200,
+  "FPS": 30,
+  "LOG_LEVEL": "INFO"
+}
