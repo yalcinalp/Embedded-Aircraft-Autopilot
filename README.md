@@ -2,6 +2,7 @@
 Critical Flight Director Program for Aircrafts. It is utilizing USART and ADC modules.
 
 ADC: analog-to-digital converter
+
 USART: universal synchronous/asynchronous receiver/transmitter
 
 * Core implementation is in the main.c file
