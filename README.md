@@ -1,10 +1,25 @@
 # Embedded-Aircraft-Autopilot
 Critical Flight Director Program for Aircrafts. It is utilizing USART and ADC modules.
 
-Core implementation is in the main.c file
+ADC: analog-to-digital converter
+USART: universal synchronous/asynchronous receiver/transmitter
+
+* Core implementation is in the main.c file
 
 # Device:  
 ![image](https://github.com/yalcinalp/Assembly-Tetris/assets/95969634/d700872b-76cb-4cf2-bafd-2614f9b04cf8)
+
+# Simulation:  
+![Screenshot 2024-08-08 at 01 09 45](https://github.com/user-attachments/assets/d60680f7-8282-4bbd-b52d-5bfe67fa7957)
+
+# Flight Commands:  
+![Screenshot 2024-08-08 at 01 10 54](https://github.com/user-attachments/assets/0fbc62a3-fefb-48bf-aa0b-05c0869270ff)
+
+# Commands Continued & Sensor Responses:
+![Screenshot 2024-08-08 at 01 11 15](https://github.com/user-attachments/assets/22839c3d-3d0f-4327-81a4-c19a2f450f93)
+
+# ADC Value to Altitude Mapping Table:
+![Screenshot 2024-08-08 at 01 12 00](https://github.com/user-attachments/assets/d96fa538-cc3a-4e10-a92c-a032a660cb92)
 
 # Notes & Technical Details:  
 In each iteration of the loop, the parser works if the input buffer is not empty and the ADC operation is started if altitude calculation is needed.
