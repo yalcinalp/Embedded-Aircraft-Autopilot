@@ -32,7 +32,7 @@ Buffer operations (`push` and `pop`) disable interrupts temporarily since serial
 * When `$END#` message is received, the system resets itself. This is due to the fact that resetting all the variables in END is cumbersome, so that they can be reset using the same initialization code used at the start of the operation.
 
 * The parser reads all the characters one by one and uses a simple state machine to parse. PARSE_IDLE corresponds to waiting the start of the next message. 
-`PARSE_HEADER` corresponds to parsing of the letter part of the message: `END`, `GOO`, `ALT` etc. PARSE_BODY corresponds to parsing of the number part of the message, count of parsing digits being determined using the message type parsed in the header.
+PARSE_HEADER corresponds to parsing of the letter part of the message: `END`, `GOO`, `ALT` etc. PARSE_BODY corresponds to parsing of the number part of the message, count of parsing digits being determined using the message type parsed in the header.
 
 * ADC is saved as it is and only converted to altitude value when needed. ADC is also only read when altitude period is not 0, checked in `adc_task()`.
 
