@@ -1,7 +1,7 @@
 # Embedded-Aircraft-Autopilot
 * Critical Flight Director Program for Aircrafts. It is utilizing USART and ADC modules.
 
-* Core implementation is in the main.c file
+* Core implementation is in the `main.c` file
 
 * ADC: analog-to-digital converter
 
